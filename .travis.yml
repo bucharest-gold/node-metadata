@@ -1,0 +1,13 @@
+dist: trusty
+language: node_js
+node_js:
+  - "4"
+  - "6"
+  - "7"
+script:
+   - npm it
+branches:
+  only:
+    - master
+notifications:
+  irc: "irc.freenode.org#brass-monkey"
