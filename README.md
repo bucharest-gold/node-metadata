@@ -23,4 +23,8 @@ npm install node-metadata -g
 
 ```
 node-metadata --images 4 6
+
+or
+
+node-metadata -i 5 7
 ```
