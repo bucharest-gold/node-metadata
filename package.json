@@ -1,6 +1,6 @@
 {
   "name": "node-metadata",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Node.js version metadata extractor",
   "scripts": {
     "test": "nyc tape test/*.js | tap-spec",
