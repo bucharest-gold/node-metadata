@@ -14,5 +14,5 @@ test('Should output latest metadata.', (t) => {
     console.error(e);
     t.fail();
   });
-  
 });
+

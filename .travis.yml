@@ -5,7 +5,9 @@ node_js:
   - "6"
   - "7"
 script:
-   - npm it
+   - npm install
+   - npm run lint
+   - npm test
 branches:
   only:
     - master

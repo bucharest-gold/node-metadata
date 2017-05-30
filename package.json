@@ -9,7 +9,10 @@
   "files": [
     "package.json",
     "README.md",
-    "index.js"
+    "LICENSE",
+    "index.js",
+    "lib",
+    "bin"
   ],
   "author": {
     "name": "Red Hat, Inc."
