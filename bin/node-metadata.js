@@ -14,8 +14,10 @@ if (program.args.length === 0 || (!program.images && !program.i)) {
 
 if (program.images || program.i) {
   lib.metadata().then(result => {
+    const output = [];
     program.args.forEach(a => {
-      console.log(result[a]);
+      output.push(result[a]);
     });
+    console.log(JSON.stringify(output));
   }).catch(console.error);
 }
