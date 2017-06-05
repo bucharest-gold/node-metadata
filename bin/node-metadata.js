@@ -14,9 +14,10 @@ if (program.args.length === 0 || (!program.images && !program.i)) {
 
 if (program.images || program.i) {
   lib.metadata().then(result => {
+    const jsonObject = JSON.parse(result);
     const output = [];
     program.args.forEach(a => {
-      output.push(result[a]);
+      output.push(jsonObject[a]);
     });
     console.log(JSON.stringify(output));
   }).catch(console.error);
