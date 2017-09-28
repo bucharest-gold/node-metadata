@@ -11,7 +11,7 @@ Node.js version metadata extractor.
 | License:        | MIT |
 | Build:          | npm |
 | Issue tracker:  | https://github.com/bucharest-gold/node-metadata/issues |
-| Engines:        | Node.js 4.x, 6.x, 7.x |
+| Engines:        | Node.js 4.x, 6.x, 8.x |
 
 ## Installation
 
