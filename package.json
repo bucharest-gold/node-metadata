@@ -44,7 +44,7 @@
   "bugs": "https://github.com/bucharest-gold/node-metadata/issues",
   "dependencies": {
     "commander": "^2.9.0",
-    "roi": "^0.15.0",
+    "roi": "^0.16.1",
     "semver": "^5.3.0",
     "underscore": "^1.8.3"
   },
