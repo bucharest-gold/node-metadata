@@ -1,28 +1,27 @@
 'use strict'
 
-const test = require('tape')
+/* eslint-env jest */
+
 const lib = require('../lib/index.js')
 
-test('Should parse the result correctly.', (t) => {
-  t.plan(1)
-  lib.metadata().then(result => {
-    t.equal(JSON.parse(result)['4'].lts, 'Argon', 'Successfully parsed, Argon found.')
+test('Should parse the result correctly.', () => {
+  expect.assertions(1)
+  return lib.metadata().then(result => {
+    expect(JSON.parse(result)['4'].lts).toBe('Argon')
   }).catch(e => {
     console.error(e)
-    t.fail()
   })
 })
 
-test('Should output latest metadata.', (t) => {
-  t.plan(4)
-  lib.metadata().then(result => {
+test('Should output latest metadata.', () => {
+  expect.assertions(4)
+  return lib.metadata().then(result => {
     const jsonObject = JSON.parse(result)
-    t.equal(jsonObject['4'].lts, 'Argon', 'Argon found.')
-    t.equal(jsonObject['5'].lts, false, 'Node 5 is unnamed.')
-    t.equal(jsonObject['6'].lts, 'Boron', 'Boron found.')
-    t.equal(jsonObject['7'].lts, false, 'Node 7 is unnamed.')
+    expect(jsonObject['4'].lts).toBe('Argon')
+    expect(jsonObject['5'].lts).toBe(false)
+    expect(jsonObject['6'].lts).toBe('Boron')
+    expect(jsonObject['7'].lts).toBe(false)
   }).catch(e => {
     console.error(e)
-    t.fail()
   })
 })
