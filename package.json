@@ -3,8 +3,8 @@
   "version": "0.2.0",
   "description": "Node.js version metadata extractor",
   "scripts": {
-    "test": "nyc tape test/*.js | tap-spec",
-    "lint": "eslint test/*.js lib/index.js"
+    "test": "nyc tape test/*.js",
+    "lint": "standard test/*.js lib/index.js"
   },
   "files": [
     "package.json",
@@ -15,33 +15,20 @@
     "bin"
   ],
   "author": {
-    "name": "Red Hat, Inc."
+    "name": "Helio Frota"
   },
-  "maintainers": [
-    {
-      "name": "Helio Frota",
-      "email": "hesilva@redhat.com"
-    }
-  ],
   "license": "Apache-2.0",
   "devDependencies": {
-    "eslint": "^3.8.1",
-    "eslint-config-semistandard": "^7.0.0",
-    "eslint-config-standard": "^6.2.0",
-    "eslint-plugin-promise": "^3.3.0",
-    "eslint-plugin-react": "^6.4.1",
-    "eslint-plugin-standard": "^2.0.1",
-    "nsp": "^2.6.1",
     "nyc": "^10.1.2",
-    "tap-spec": "^4.1.1",
+    "standard": "^12.0.1",
     "tape": "^4.5.1"
   },
-  "homepage": "https://github.com/bucharest-gold/node-metadata#readme",
+  "homepage": "https://github.com/nodeshift/node-metadata#readme",
   "repository": {
     "type": "git",
-    "url": "bucharest-gold/node-metadata"
+    "url": "nodeshift/node-metadata"
   },
-  "bugs": "https://github.com/bucharest-gold/node-metadata/issues",
+  "bugs": "https://github.com/nodeshift/node-metadata/issues",
   "dependencies": {
     "commander": "^2.9.0",
     "roi": "^0.16.1",
