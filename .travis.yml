@@ -6,6 +6,7 @@ script:
    - npm install
    - npm run lint
    - npm test
+   - npm run coveralls
 branches:
   only:
     - master
