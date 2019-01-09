@@ -3,7 +3,8 @@
   "version": "0.2.0",
   "description": "Node.js version metadata extractor",
   "scripts": {
-    "test": "jest --coverage test/*.js",
+    "test": "jest",
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
     "watch-test": "jest --watch",
     "lint": "semistandard test/*.js lib/index.js"
   },
@@ -20,6 +21,7 @@
   },
   "license": "Apache-2.0",
   "devDependencies": {
+    "coveralls": "^3.0.2",
     "jest": "^23.6.0",
     "semistandard": "^13.0.1"
   },

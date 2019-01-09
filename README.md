@@ -1,6 +1,7 @@
 # node-metadata
 
 [![Build Status](https://travis-ci.org/nodeshift/node-metadata.svg?branch=master)](https://travis-ci.org/nodeshift/node-metadata)
+[![Coverage Status](https://coveralls.io/repos/github/nodeshift/node-metadata/badge.svg?branch=master)](https://coveralls.io/github/nodeshift/node-metadata?branch=master)
 
 A small client module that shows metadata about Node.js released versions.
 This is an dependency of this project: https://github.com/nodeshift/node-image-stream
